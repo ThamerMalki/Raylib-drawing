@@ -3,6 +3,7 @@
 
 Canvas::Canvas()
 {
+    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(SCREEN_WIDTH,SCREEN_HEIGHT,"Canvas");
     SetTargetFPS(FRAMES);
     m_target = LoadRenderTexture(SCREEN_WIDTH,SCREEN_HEIGHT);
